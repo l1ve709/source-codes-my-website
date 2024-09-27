@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geliştirme Aşamasında</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Roboto Mono', monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #c9d1d9;
+            overflow: hidden;
+            background-color: #000;
+        }
+
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+            z-index: -2;
+            opacity: 0.5;
+        }
+
+        .container {
+            text-align: center;
+            padding: 15px;
+            border-radius: 16px;
+            background: rgba(24, 27, 35, 0.85);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+            max-width: 90vw;
+            max-height: 90vh;
+            backdrop-filter: blur(12px);
+            position: relative;
+            animation: dropIn 0.7s ease-out;
+            z-index: 1;
+        }
+
+        @keyframes dropIn {
+            0% { opacity: 0; transform: translateY(-50px) scale(0.95); }
+            100% { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        .content h1 {
+            font-size: 1.5rem; /* Boyut küçültüldü */
+            margin-bottom: 15px; /* Aralık küçültüldü */
+            color: #61dafb;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            text-shadow: 0 4px 10px rgba(0, 255, 255, 0.5);
+            animation: glow 1.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #61dafb, 0 0 20px #36c2f1, 0 0 30px #61dafb; }
+            to { text-shadow: 0 0 20px #61dafb, 0 0 30px #36c2f1, 0 0 40px #61dafb; }
+        }
+
+        .content p {
+            font-size: 0.9rem; /* Küçültüldü */
+            color: #b0b8c1;
+            margin-bottom: 20px;
+            animation: fadeInText 1.2s ease-out forwards;
+        }
+
+        @keyframes fadeInText {
+            0% { opacity: 0; transform: translateY(10px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .code-box {
+            background: #282c34;
+            padding: 8px; /* Küçültüldü */
+            border-radius: 8px;
+            text-align: left;
+            margin-bottom: 15px; /* Küçültüldü */
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+            overflow-x: auto;
+            animation: slideUp 1s ease-out;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .code-line {
+            color: #d4d4d4;
+            display: block;
+            font-size: 0.8rem; /* Boyut küçültüldü */
+            line-height: 1.5;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .loader {
+            border: 6px solid rgba(62, 68, 81, 0.3);
+            border-top: 6px solid #61dafb;
+            border-radius: 50%;
+            width: 35px; /* Küçültüldü */
+            height: 35px; /* Küçültüldü */
+            animation: spin 1.5s linear infinite;
+            margin: 15px auto; /* Aralık küçültüldü */
+            filter: drop-shadow(0 0 10px #61dafb);
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .btn {
+            padding: 8px 16px; /* Küçültüldü */
+            border: none;
+            border-radius: 8px;
+            background: linear-gradient(45deg, #61dafb, #36c2f1);
+            color: #1e1e2f;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 0.8rem; /* Küçültüldü */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+            z-index: 10;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px) rotate(-2deg);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(45deg, #36c2f1, #61dafb);
+            filter: brightness(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+                max-width: 95vw;
+                max-height: 85vh;
+            }
+
+            .content h1 {
+                font-size: 1.3rem; /* Daha küçük ekranlar için */
+            }
+
+            .content p {
+                font-size: 0.85rem; /* Daha küçük ekranlar için */
+            }
+
+            .code-box {
+                padding: 6px;
+            }
+
+            .loader {
+                width: 30px;
+                height: 30px;
+            }
+
+            .btn {
+                padding: 6px 12px;
+                font-size: 0.7rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 8px;
+                max-width: 95vw;
+                max-height: 80vh;
+            }
+
+            .content h1 {
+                font-size: 1.2rem;
+            }
+
+            .content p {
+                font-size: 0.8rem;
+            }
+
+            .code-box {
+                padding: 6px;
+            }
+
+            .loader {
+                width: 25px;
+                height: 25px;
+            }
+
+            .btn {
+                padding: 6px 10px;
+                font-size: 0.65rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="container">
+        <div class="content">
+            <h1>&lt; Geliştirme Aşamasında &gt;</h1>
+            <p>Bu sayfa şu anda Ediz Sönmez tarafından geliştiriliyor, sonra tekrar deneyin.</p>
+            <div class="code-box">
+                <pre>
+<span class="code-line">Bot Dasboardı Kısa Süre İçerisinde Hazır Olacaktır</span>
+<span class="code-line">function comingSoon() {</span> 
+<span class="code-line">   Beklemede Kalın :D</span>  
+<span class="code-line">}</span>
+                </pre>
+            </div>
+            <div class="loader"></div>
+            <button id="goBackBtn" class="btn">Geri Dön</button>
+        </div> 
+    </div>
+    <script> 
+        document.getElementById('goBackBtn').addEventListener('click', function() { 
+            history.back();
+        });
+    </script>
+</body>
+</html>
