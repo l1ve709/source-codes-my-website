@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 playIcon.style.display = 'none';
                 pauseIcon.style.display = 'inline';
             }).catch(error => {
-                console.error('Oynatma hatas©Å: ', error);
+                console.error('Oynatma hatasÂÂ©Ã…: ', error);
             });
         } else {
             musicPlayer.pause();
