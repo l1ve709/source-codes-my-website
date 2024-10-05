@@ -1,4 +1,19 @@
-/* for support Instagram : l1ve709 */
+/* 
+    *****************************************************************
+    *    *                                                *          *
+    *     *                   ___        _____ ___   ___  
+    *   *       | / |_      _|___  / _ \ / _ \ 
+    *  *        | | \ \ / / _ \ / / | | | (_) |        *
+    *     *     | | |\ V /  __// /| |_| |\__, |
+    *   *       |_|_| \_/ \___/_/  \___/   /_/      *
+    *      *                                                     *    *
+    *    *          Contact Mail: businnes@l1ve709.com   *
+    *   *            Contact to Instagram: l1ve709                *   *
+    *      *            Created by Ediz Sönmez                       *
+    *****************************************************************
+    
+
+<!-- l1ve709XXD --> */
 
 
 body {
@@ -31,7 +46,7 @@ body {
     padding: 45px;
     box-shadow: 0 0 60px rgba(0, 0, 0, 0.8);
     background: rgba(0, 0, 0, 0.7);
-    border-radius: 20px;
+    border-radius: 30px;
     backdrop-filter: blur(3px);
     animation: fadeIn 1.5s ease-in-out;
 }
@@ -64,40 +79,43 @@ header p {
     0% {
         box-shadow: 0 5px 15px rgb(255, 0, 0);
     }
-    20% {
-        box-shadow: 0 5px 15px rgb(255, 165, 0);
+    25% {
+        box-shadow: 0 5px 15px rgb(255, 255, 255);
     }
-    40% {
-        box-shadow: 0 5px 15px rgb(255, 255, 0);
+    50% {
+        box-shadow: 0 5px 15px rgb(255, 0, 0);
     }
-    60% {
-        box-shadow: 0 5px 15px rgb(0, 255, 0);
+    75% {
+        box-shadow: 0 5px 15px rgb(255, 255, 255);
     }
-    80% {
-        box-shadow: 0 5px 15px rgb(0, 255, 255);
-    }
+
     100% {
-        box-shadow: 0 5px 15px rgb(0, 0, 255);
+        box-shadow: 0 5px 15px rgb(255, 255, 255);
     }
 }
 
+
+
 .intro-card {
-    background: url('images/makedonya.png') center center no-repeat;
-    background-size: cover;
+    background: url('images/atatürk.png') center center no-repeat;
+    background-size: cover; 
     padding: 16px;
     border-radius: 13px;
     box-shadow: 0 5px 15px rgb(255, 0, 0);
     display: inline-block;
-    width: 97.3%;
-    max-width: 450px;
+    width: 95%; 
+    max-width: 450px; 
     backdrop-filter: blur(3px);
     color: #fff;
-    animation: colorChange 2s infinite;
+    animation: colorChange 5s infinite;
+
 }
 
+
+
 .profile-img {
-    width: 145px;
-    height: 145px;
+    width: 200;
+    height: 205px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
@@ -105,15 +123,23 @@ header p {
 }
 
 .intro-card h2 {
-    font-size: 5em;
+    font-size: 10em;
     margin-bottom: 15px;
     color: #fff;
 }
 
 .intro-card p {
-    font-size: 1.6em;
-    color: #ddd;
-    line-height: 1.9em;
+    font-size: 2.5em;
+    color: #6b6868;
+    line-height: 2.3em;
+}
+
+
+.intro-card z {
+    font-size: 2.9em;
+    color: #8a8a8a;
+    line-height: 5em;
+    font-style: italic;
 }
 
 .social-links {
@@ -313,7 +339,7 @@ footer p {
 }
 
 .control-btn.pause::before {
-    content: '| |'; 
+    content: '||'; 
 }
 
 .control-btn:hover {
@@ -511,7 +537,14 @@ footer p {
 }
 @media (min-width: 1280px) and (max-width: 1423px) {
     .container {
-        padding: 32px;
+        text-align: center;
+        max-width: 650px;
+        padding: 40px;
+        box-shadow: 0 0 45px rgba(0, 0, 0, 0.8);
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 25px;
+        backdrop-filter: blur(2px);
+        animation: fadeIn 1.5s ease-in-out;
     }
 
     header h1 {
@@ -523,21 +556,50 @@ footer p {
     }
 
     .intro-card {
-        padding: 12px;
+        background: url('images/atatürk.png') center center no-repeat;
+        background-size: cover; 
+        padding: 11px;
+        border-radius: 6px;
+        display: inline-block;
+        width: 90%;
+        max-width: 330px; 
+        backdrop-filter: blur(3px);
+        color: #fff;
+        animation: colorChange 5s infinite;
+
     }
+
+
+    .intro-card z {
+        font-size: 2.4em;
+        color: #8a8a8a;
+        line-height: 3.4em;
+        font-style: italic; 
+    }
+    
+
+    .intro-card p {
+        font-size: 1em;
+    } 
+
 
     .profile-img {
         width: 120px;
         height: 120px;
     }
 
+
+
+
+
+
     .intro-card h2 {
         font-size: 4em;
     }
 
-    .intro-card p {
-        font-size: 1.2em;
-    }
+   .intro-card p {
+        font-size: 1em;
+    } 
 
     .social-icon {
         width: 45px;
@@ -564,10 +626,25 @@ footer p {
     }
 
     #bouncing-image {
-        width: 300;
-        height: 300;
+        width: 250px;
+        height: 250px;
         top: 40px;
         left: 40px;
+    }
+
+    #track-title {
+        font-size: 20px; 
+        font-weight: 500; 
+        background-size: 200% 100%;
+    }
+
+    #progress-bar {
+        width: 210px; 
+        height: 4px; 
+        margin: 6px 0; 
+        -webkit-appearances: none;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
     }
 
     .header-right {
@@ -591,7 +668,14 @@ footer p {
 
 @media (max-width: 768px) {
     .container {
-        padding: 40px;
+        text-align: center;
+        max-width: 500px;
+        padding: 14px;
+        box-shadow: 0 0 45px rgba(0, 0, 0, 0.8);
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 20px;
+        backdrop-filter: blur(2px);
+        animation: fadeIn 1.5s ease-in-out;
     }
 
     header h1 {
@@ -602,22 +686,26 @@ footer p {
         font-size: 1.4em;
     }
 
-    .intro-card {
-        padding: 12px;
-    }
-
     .profile-img {
         width: 130px;
         height: 130px;
     }
 
     .intro-card h2 {
-        font-size: 4em;
+        font-size: 3.9em;
     }
 
     .intro-card p {
         font-size: 1.4em;
     }
+
+    .intro-card z {
+        font-size: 2.4em;
+        color: #8a8a8a;
+        line-height: 3.8em;
+        font-style: italic; 
+    }
+
 
     .social-icon {
         width: 45;
@@ -649,6 +737,7 @@ footer p {
         top: 30px;
         left: 30px;
     }
+
 
     .header-right {
         top: 8px;
@@ -816,7 +905,7 @@ footer p {
 }
 
 .control-btn.pause::before {
-    content: '| |';
+    content: '||';
 }
 
 .control-btn:hover {
@@ -859,11 +948,20 @@ footer p {
 }
 
 @keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    25% {
+        transform: translateX(-50px) translateY(-50px);
     }
     50% {
-        transform: translateY(-80px); 
+        transform: translateX(50px) translateY(50px);
+    }
+    75% {
+        transform: translateX(-50px) translateY(50px);
+    }
+    100% {
+        transform: translateX(0) translateY(0);
     }
 }
 
@@ -919,5 +1017,3 @@ footer p {
     }
 }
 }
-
-
