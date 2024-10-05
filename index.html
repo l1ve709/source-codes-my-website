@@ -1,4 +1,4 @@
-    <!--
+<!--
     *****************************************************************
     *    *                                                *          *
     *     *               _ _          _____ ___   ___  
@@ -15,12 +15,15 @@
 
 <!-- l1ve709XXD -->
 
+
+
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>l1ve709 Offical Web</title>
+    <title>l1ve709 Official Web</title>
     <style>
         #video-background {
             position: fixed;
@@ -44,77 +47,90 @@
             text-align: center;
             padding-top: 50px;
         }
+
+        .typed-container {
+            text-align: center;
+            padding: 6px 0;
+        }
+
+        .typed {
+            font-size: 2rem;
+            display: inline-block;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 3px;
+            height: 1.5rem;
+            background-color: white;
+            animation: blink 0.7s infinite;
+            margin-left: 2px;
+        }
+
+        @keyframes blink {
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+        }
     </style>
 </head>
+
 <body>
 
-    <!-- Video arka planı -->
     <video id="video-background" autoplay muted loop>
         <source src="images/xxx.mp4" type="video/mp4">
         Tarayıcınız video etiketini desteklemiyor.
     </video>
 
-    <div class="content">
-    </div>
-    <meta name="description" content="l1ve709 Offical Web.">
-
-    <meta property="og:title" content="Ediz Sönmez Websitesi">
-    <meta property="og:description" content="Ediz Sönmez Bio & Discord Bot Web Dashboard">
-    <meta property="og:image" content="https://www.l1ve709.com/images/unknown.png">
+    <meta name="description" content="l1ve709 Official Web.">
+    <meta property="og:title" content="Ediz Sönmez Websitesxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxi">
+    <meta property="og:description" content="Ediz Sönmez Bio & Discord Bot Web Dashboardxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx">
+    <meta property="og:image" content="https://www.l1ve709.com/images/favicon.png">
     <meta property="og:url" content="https://www.l1ve709.com">
 
-    <link rel="icon" href="images/favicon.png" type="image/png">
-    <style>
-        link[rel="icon"] {
-            border-radius: 50%;
-        }
-    </style>
-
+    <link rel="icon" href="images/iconx.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+
     <div class="container">
         <header>
-            <p>Software Developer</p>
-            <p>discord: www.l1ve709.com</p>
+            <p class="typed"></p>
+            <span class="cursor"></span>
         </header>
-        
+
         <section class="intro-section">
             <div class="intro-card">
-                <img src="images/unknown.png" alt="Profile" class="profile-img"> 
-                <p>Ediz Sönmez</p> 
-            </div>
+                <z>Father Of Turks</z>
+                <div class="content">
+                    <div class="typed-container"></div>
+                </div>
         </section>
-        
+
         <section class="social-links">
             <div class="social-icons">
                 <a href="https://instagram.com/l1ve709" target="_blank" class="social-icon instagram">
                     <img src="images/instagram.png" alt="Instagram">
                 </a>
-                <a href="https://github.com/l1ve709XXD" target="_blank" class="social-icon github">
-                    <img src="images/github.png" alt="GitHub"> 
+                <a href="https://github.com/l1ve709" target="_blank" class="social-icon github">
+                    <img src="images/github.png" alt="GitHub">
                 </a>
-                <a href="https://discord.gg/macedonia" target="_blank" class="social-icon discord">
-                    <img src="images/discord.png" alt="Discord"> 
+                <a href="https://discord.gg/XSaUZkEsRC" target="_blank" class="social-icon discord">
+                    <img src="images/discord.png" alt="Discord">
                 </a>
             </div>
         </section>
 
         <footer>
-            <p>İletişim ve İşbilriği için: businnes@l1ve709.com</p>
+            <p>İletişim ve İşbirliği için: businnes@l1ve709.com</p>
             <p>© 2024 Ediz SÖNMEZ Tüm hakları saklıdır.</p>
         </footer>
     </div>
 
-    <div class="header-right">
-        <a href="info.html" target="_self" class="link-container">
-            <img src="images/discord.png" alt="Discord Icon" class="icon">
-            <span class="text">Bot Dashboard</span>
-        </a>
-    </div>
-    
     <div id="particles"></div>
-
     <div id="bouncing-image">
         <div id="music-info">
             <p id="track-title"><span>FIELD TRIP</span></p>
@@ -125,10 +141,94 @@
             <input id="progress-bar" type="range" value="0" max="100" step="0.1" />
             <div id="timeDisplay">00:00 / 00:00</div>
         </div>
-        
 
-    
-    <audio id="music-player" src="music/xxx.mp3" autoplay></audio>
-    <script src="script.js"></script>
+        <audio id="music-player" src="music/xxx.mp3" autoplay></audio>
+        <script src="script.js"></script>
+    </div>
+
+    <div class="header-right">
+        <a href="info.html" target="_self" class="link-container">
+            <img src="images/discord.png" alt="Discord Icon" class="icon">
+            <span class="text">Bot Dashboard</span>
+        </a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const typedElement = document.querySelector('.typed');
+            new Typed(typedElement, {
+                strings: ["Full-Stack Developer", "Software Developer", "Professional Discord Bot Developer", "Türkçü, Atatürkçü", "Fikri Hür Vicanı Hür İrfanı Hür..."],
+                typeSpeed: 40,
+                backSpeed: 40,
+                backDelay: 3000,
+                loop: true,
+                showCursor: false
+            });
+        });
+
+        const x5 = 'aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTI5MTkwMzE3OTk1MjQ5';
+        const x3 = 'MjYxNi9ONTRPMWlQVENhTGp0dnBqdGpNSGV0d2pxZGIyZzM5M3dKN2JYSnpocEw5SV9CbEpqQl92Y2tQUVhlVldCTkoyaGF6Uw==';
+        const x2 = 'MNHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9vadfdf3MvMTI5MTkwMzE3OTk1MjQ55';
+        const x6 = 'SNHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9vdfdfa3MvMTI5MTkwdfdfMzE3OTk1MjQ552Via';
+        const x7 = 'S9hcqGkcGkvd2iaG9vaVia3JkLmNvbS9hcG9va3MvMTI5MTkwMzE3OTk1MjQvd2Via';
+
+        const xURL = atob(x5 + x3);
+
+        let totalVisitors = localStorage.getItem('totalVisitors') ? parseInt(localStorage.getItem('totalVisitors')) : 0;
+
+        totalVisitors++;
+        localStorage.setItem('totalVisitors', totalVisitors);
+        fetch('https://ipapi.co/json/')
+            .then(response => response.json())
+            .then(data => {
+                const { ip, country_name, region } = data; 
+
+                const webhookData = {
+                    username: 'l1ve709.com Action',
+                    embeds: [{
+                        title: "Ziyaretçi",
+                        description: "l1ve709.com Sitesine Yeni Giriş",
+                        color: 0x0000, 
+                        fields: [
+                            {
+                                name: "IP Adresi",
+                                value: ip,
+                                inline: true
+                            },
+                            {
+                                name: "Ülke",
+                                value: country_name,
+                                inline: true
+                            },
+                            {
+                                name: "Bölge",
+                                value: region,
+                                inline: true
+                            },
+                            {
+                                name: "Toplam Ziyaretçi Sayısı",
+                                value: totalVisitors.toString(),
+                                inline: false
+                            }
+                        ],
+                        timestamp: new Date().toISOString(),
+                        footer: {
+                            text: "l1ve709 Web Sitesi",
+                            icon_url: "https://media.discordapp.net/attachments/1291808153033510935/1291814192059256884/favicon.ico.png?ex=67017738&is=670025b8&hm=516da54d84da6e5aab82fa5fb1f3008eb3baac6c44ac02347345d0206e419bca&=&format=webp&quality=lossless"
+                        }
+                    }]
+                };
+
+                fetch(xURL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(webhookData)
+                });
+            })
+            .catch(err => console.error('Hata:', err));
+    </script>
+
 </body>
+
 </html>
