@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bu İnternet Adresi Erişime Kapatılmıştır</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            text-decoration: none;
+            box-sizing: border-box;	
+        }
+        
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            background-image: url("./Background.jpg");
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        main {
+            width: 1200px;
+            max-width: 100%;
+            color: #ffffff;
+            padding: 2vw;
+            text-align: center; 
+        }
+
+        main > h1 {
+            margin-bottom: 2vw;
+            font-size: 2vw;
+            font-weight: 700;
+            letter-spacing: 1px; 
+        }
+
+        main > p {
+            text-align: justify;
+            font-size: 1.6vw;
+            font-weight: 280; 
+            line-height: 1.3; 
+            margin: 0 1vw 2vw 1vw; 
+            color: rgba(255, 255, 255); 
+            letter-spacing: 0.4; 
+        }
+
+        main > p:nth-child(2) {
+            margin-bottom: 2vw;
+        }
+
+        main > section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 4vw; 
+        }
+
+        main > section > section {
+            flex: 0px auto;
+            text-align: center;
+        }
+
+        main > section > section > img {
+            max-width: 12vw;
+            max-height: 12vh;
+            object-fit: contain;
+        }
+        
+        main > section > section:nth-child(2) > img {
+            max-width: 20vw !important;
+            max-height: 20vh !important;
+        }
+
+        @media only screen and (max-width: 1000px) {
+            h1 {
+                font-size: 5vw !important;
+            }
+            
+            p {
+                font-size: 3vw !important;
+            }
+
+            main {
+                padding: 8vw;
+            }
+
+            main > h1 {
+                margin-bottom: 4vw;
+            }
+
+            main > p:nth-child(2) {
+                margin-bottom: 4vw;
+            }
+
+            main > section {
+                margin-top: 8vw; 
+            }
+
+            main > section > section:nth-child(1) > img {
+                max-width: 12vw;
+                max-height: 12vh;
+                object-fit: contain;
+            }
+            
+            main > section > section:nth-child(2) > img {
+                max-width: 25vw !important;
+                max-height: 25vh !important;
+            }
+
+            main > section > section:nth-child(3) > img {
+                max-width: 20vw !important;
+                max-height: 20vh !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>BU İNTERNET ADRESİ ERİŞİME KAPATILMIŞTIR</h1>
+
+        <p>Bu internet adresi, Türkiye Cumhuriyeti'nin ulusal güvenliğine yönelik yasa dışı siber faaliyetlerde bulunması nedeniyle, Milli İstihbarat Teşkilatı (MİT), Jandarma Genel Komutanlığı (JGK) ve Ulusal Siber Olaylara Müdahale Merkezi (USOM) tarafından yürütülen koordineli operasyonlar neticesinde ele geçirilmiş ve erişime kapatılmıştır.</p>
+            
+        <p>Yasa dışı faaliyetlerde bulunan siber teröristlere karşı önleyici ve caydırıcı tedbirler kararlılıkla sürdürülecektir.</p>
+
+        <section>
+            <section>
+                <img src="./JKG.png" alt="Jandarma Genel Komutanlığı">
+            </section>
+
+            <section>
+                <img src="./MİT.png" alt="Milli İstihbarat Teşkilatı">
+            </section>
+
+            <section>
+                <img src="./USOM.png" alt="Ulusal Siber Olaylara Müdahale Merkezi">
+            </section>
+        </section>
+    </main>
+    
+</body>
+</html>
